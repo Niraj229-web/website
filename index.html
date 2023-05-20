@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intirial Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js">
+    </script>
+</head>
+<body>
+<div class="banner">
+        <img src="logo.png" class="logo">
+        <nav id="sidenav">
+           
+           <ul><b>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hall.html">Living Room</a></li>
+            <li><a href="baderoom.html">Bedroom</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="#footer">content</a></li>
+           </b></ul>
+        
+        </nav> 
+        <img src="menu2.png" id="menuBtn" >
+        <div class="content">
+            <h1>DESIGN YOUR HOUSE</h1>
+            <p>We are provide best design and style for your Flat and Banglow, 
+                <br>It can provide you premium.
+            </p>
+            <div>
+                <button type="button"><span></span>Watch More</button>
+                <button type="button"><span></span>Subscribe</button>
+            </div>
+        </div> 
+ </div>
+
+ <!--footer-->
+
+ <section id="footer">
+    <div class="container footer-raw">
+        <div class="footer-left-col">
+            <div class="footer-link">
+                <div class="link-title">
+                    <h3>Product</h3><br>
+                    <small>Our Paln</small><br>
+                    <small>Free Trial</small>
+                </div>
+                <div class="link-title">
+                    <h3>About us</h3><br>
+                    <small>Request Demo</small><br>
+                    <small>FAQs</small>
+                </div>
+                <div class="link-title">
+                    <h3>Support</h3><br>
+                    <small>Features</small><br>
+                    <small>Contect Us</small>
+                </div>
+                <div class="link-title">
+                    <h3>Explore</h3><br>
+                    <small>Find Best</small><br>
+                    <small>Corporet Planning</small>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-col">
+            <div class="foooter-info">
+                <div class="copyright-text">
+                    <b><p>&copy; 2023 Interior Design Studio.</p>
+                         <p>All rights reserved.</p></b>
+                </div>
+                <div class="Socialmedia">
+                   <a href="https://www.facebook.com/niraj.goyani.3"> <img src="facebook.png"></a>
+                    <a href="https://www.instagram.com/niraj_goyani_229/"><img src="instagram.png"></a>
+                    <a href="https://twitter.com/niraj_goyani"><img src="twitter.png"></a>
+                    <a href="https://www.linkedin.com/in/niraj-goyani-bb5a2a214/"><img src="linkedin.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!--script-->
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sidenav = document.getElementById("sidenav");
+         
+         sidenav.style.right = "-250px";
+         menuBtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0px";
+            }
+            else{
+                sidenav.style.right= " -250px";
+            }
+         }
+
+         var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 300
+         });
+    </script>
+    
+</body>
+</html>

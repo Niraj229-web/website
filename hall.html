@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Room Design</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(living2.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+        .nav{
+    width:85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+          }
+    #sidenav{
+    width:200px;
+    height: 100vh;
+    position: fixed;
+    right:-250px;
+    top: 0;
+    background:#009678;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px ;
+    position: relative;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    text-transform: uppercase;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 40%;
+}
+#menuBtn{
+    width: 40px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content h1 p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height:25px;
+}
+button{
+    width: 300px;
+    padding: 10px 0;
+    margin: 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009678;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.card{
+    
+    height: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+  
+}
+.card img{
+    height: 300px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.intro{
+    height: 60px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    background: rgba(27,27,27,0.5) ;
+    color: white;
+    bottom: 150px;
+    transition: .5s;
+}
+.intro h1{
+    font-size: 25px;
+    margin: 10px;
+}
+.intro p{
+    font-size: 15px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 100px;
+    bottom: 150px;
+    background: rgba(27,27,27,0.5);
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.01) rotate(1deg) ;
+
+}
+/*---footer---*/
+#footer{
+    background-color: #009678;
+    z-index:2;
+}
+.footer-raw{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    flex-basis: 50%;
+}
+.footer-right-col{
+    flex-basis: 35%;
+}
+.footer-link{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link-title{
+  color: rgb(19, 20, 20);
+  margin-bottom: 20px;
+}
+.link-title small{
+    font-size: 13px;
+    color:white;
+}
+.Socialmedia{
+    justify-content: space-between;
+    margin: 10px 80px;
+    padding: 0 10px;
+}
+    </style>
+</head>
+
+
+<body><div class="banner">
+    <section class="container">
+        <div class="card">
+            <a href="https://www.designcafe.com/interior-design/living-room-design/#"><img src="living1.jpg" alt="hall"></a>
+            <div class="intro">
+                <h2>A Modern Living Room</h2>
+                <p>This living room is designed to utilise space efficiently to give this area a clutter-free look. It comes with sectional sofa upholstered with pockets on the side to store magazines and newspapers. The room also has a completely-modular TV unit in grey and light wood laminate designed with ample storage. Cabinets at the bottom and open shelves on top.</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.livspace.com/in/design-ideas/living-rooms/designs/modern-living-room-design-with-blue-accent-chairs-and-an-ottoman-d-inlr-jfm2023-509"><img src="living2.2.jpg" alt="hall"></a>
+            <div class="intro">
+                <h2>Blue Accent Chairs And An Ottoman</h2>
+                <p> 
+
+                    1. Accent wall treated with light-coloured wallpaper
+                    
+                    2. False ceiling design with warm lighting fixtures
+                    
+                    Large gatherings</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.homelane.com/it's-all-about-grey-matter-living-room-cid-HLKT00000763"><img src="living3.jpg" alt="hall"></a>
+            <div class="intro">
+                <h2>Grey Matter Living Room</h2>
+                <p>Red and grey is a combination that never goes out of style, and this colourful living room balances these hues perfectly. Neutral shades pull the living room wall design together, with the bold accent wall and tasteful pops of red in the chairs and cushions anchoring the colour palette. The entertainment unit is sleek and streamlined, with plenty of space to display choice artefacts. </p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div>
+    <nav id="sidenav">
+           
+        <ul><b>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="hall.html">Living Room</a></li>
+         <li><a href="baderoom.html">Bedroom</a></li>
+         <li><a href="kitchen.html">Kitchen</a></li>
+         <li><a href="#footer">content</a></li>
+        </b></ul>
+     
+     </nav> 
+     <img src="menu2.png" id="menuBtn" >
+     </div>
+<!--footer-->
+
+<section id="footer">
+    <div class="container footer-raw">
+        <div class="footer-left-col">
+            <div class="footer-link">
+                <div class="link-title">
+                    <h3>Product</h3><br>
+                    <small>Our Paln</small><br>
+                    <small>Free Trial</small>
+                </div>
+                <div class="link-title">
+                    <h3>About us</h3><br>
+                    <small>Request Demo</small><br>
+                    <small>FAQs</small>
+                </div>
+                <div class="link-title">
+                    <h3>Support</h3><br>
+                    <small>Features</small><br>
+                    <small>Contect Us</small>
+                </div>
+                <div class="link-title">
+                    <h3>Explore</h3><br>
+                    <small>Find Best</small><br>
+                    <small>Corporet Planning</small>
+                </div>
+            </div>
+        </div>
+
+     <div class="footer-right-col">
+        <div class="foooter-info">
+            <div class="copyright-text">
+                <b><p>&copy; 2023 Interior Design Studio.</p>
+                     <p>All rights reserved.</p></b>
+            </div>
+            <div class="Socialmedia">
+               <a href="https://www.facebook.com/niraj.goyani.3"> <img src="facebook.png"></a>
+                <a href="https://www.instagram.com/niraj_goyani_229/"><img src="instagram.png"></a>
+                <a href="https://twitter.com/niraj_goyani"><img src="twitter.png"></a>
+                <a href="https://www.linkedin.com/in/niraj-goyani-bb5a2a214/"><img src="linkedin.png"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+  <!--script-->
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sidenav = document.getElementById("sidenav");
+         
+         sidenav.style.right = "-250px";
+         menuBtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0px";
+            }
+            else{
+                sidenav.style.right= " -250px";
+            }
+         }
+    </script>
+    
+</body>
+</html> 
